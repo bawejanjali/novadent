@@ -5,7 +5,7 @@ $mysqli = new mysqli("localhost", "root", "", "signature");
 // Fetch all saved signatures
 $result = $mysqli->query("SELECT * FROM sign_list");
 
-echo "<h1>Saved Signatures</h1>";
+echo "<h1>Saved Signatures Testt</h1>";
 echo "<table border='1' cellpadding='10'>";
 echo "<tr><th>ID</th><th>Signature</th><th>Created At</th></tr>";
 
@@ -20,4 +20,5 @@ while ($row = $result->fetch_assoc()) {
 echo "</table>";
 
 $mysqli->close();
+
 ?>
